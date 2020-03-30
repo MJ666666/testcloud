@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common" />
+        <module name="nacos" />
+        <module name="nacos2" />
+        <module name="redis-service" />
+        <module name="redis-service2" />
+        <module name="testcloud" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka_server" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common" options="-parameters" />
+      <module name="eureka_server" options="" />
+      <module name="nacos" options="-parameters" />
+      <module name="nacos2" options="-parameters" />
+      <module name="redis-service" options="-parameters" />
+      <module name="redis-service2" options="-parameters" />
+    </option>
+  </component>
+</project>
