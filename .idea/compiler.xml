@@ -12,6 +12,7 @@
         <module name="nacos2" />
         <module name="redis-service" />
         <module name="redis-service2" />
+        <module name="test_rw" />
         <module name="testcloud" />
       </profile>
     </annotationProcessing>
@@ -27,6 +28,7 @@
       <module name="nacos2" options="-parameters" />
       <module name="redis-service" options="-parameters" />
       <module name="redis-service2" options="-parameters" />
+      <module name="test_rw" options="-parameters" />
     </option>
   </component>
 </project>

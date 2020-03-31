@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/redis-service/pom.xml" />
         <option value="$PROJECT_DIR$/common/pom.xml" />
         <option value="$PROJECT_DIR$/redis-service2/pom.xml" />
+        <option value="$PROJECT_DIR$/test_rw/pom.xml" />
       </list>
     </option>
   </component>
