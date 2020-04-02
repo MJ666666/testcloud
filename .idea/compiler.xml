@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common" />
+        <module name="gateway" />
         <module name="nacos" />
         <module name="nacos2" />
         <module name="redis-service" />
@@ -24,6 +25,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common" options="-parameters" />
       <module name="eureka_server" options="" />
+      <module name="gateway" options="-parameters" />
       <module name="nacos" options="-parameters" />
       <module name="nacos2" options="-parameters" />
       <module name="redis-service" options="-parameters" />

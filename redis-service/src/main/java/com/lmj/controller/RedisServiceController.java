@@ -35,6 +35,15 @@ public class RedisServiceController {
     public String storeValue(@PathVariable("key") String key,@PathVariable("value") String value) {
         return jedisCluster.set(key,value);
     }
+    @RequestMapping(value="/expire/{key}/{time}",method = RequestMethod.GET)
+    public Long expireKey(@PathVariable("key") String key,@PathVariable("time") int time) {
+        return jedisCluster.expire(key,time);
+    }
+
+    @RequestMapping(value="/delete/{key}",method = RequestMethod.GET)
+    public Long delKey(@PathVariable("key") String key) {
+        return jedisCluster.del(key);
+    }
 
 
     @RequestMapping(value = "/getIp", method = RequestMethod.GET)
@@ -44,4 +53,6 @@ public class RedisServiceController {
         String ipAndPort=localAddr+":"+localPort;
         return ipAndPort;
     }
+
+
 }

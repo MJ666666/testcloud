@@ -31,6 +31,12 @@ public interface RedisService {
      String setRedisValue(@PathVariable("key") String key,@PathVariable("value") String value);
 
 
+    @GetMapping(value="/delete/{key}")
+    Long deleteKey(@PathVariable("key") String key);
+
+
+    @GetMapping(value="/expire/{key}/{time}")
+    Long expireKey(@PathVariable("key") String key,@PathVariable("time") int time);
 
     @RequestMapping(value = "/getIp", method = RequestMethod.GET)
     public String getIpAndPort();

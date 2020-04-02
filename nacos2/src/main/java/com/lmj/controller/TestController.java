@@ -44,7 +44,19 @@ public class TestController {
         }
 
 
-        @GetMapping("/getIp")
+    @GetMapping("/expire/{key}/{time}")
+    public Long expireKey(@PathVariable("key") String key,@PathVariable("time") int time) {
+
+        return redisService.expireKey(key,time);
+    }
+    @GetMapping("/delete/{key}")
+    public Long deleteKey(@PathVariable("key") String key) {
+
+        return redisService.deleteKey(key);
+    }
+
+
+    @GetMapping("/getIp")
     public String getIpAndPort() {
             return redisService.getIpAndPort();
         }

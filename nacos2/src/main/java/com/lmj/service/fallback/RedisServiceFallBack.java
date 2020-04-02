@@ -29,6 +29,19 @@ public class RedisServiceFallBack implements RedisService {
     }
 
     @Override
+    public Long deleteKey(String key) {
+        System.out.println("降级啦："+key);
+
+        return null;
+    }
+
+    @Override
+    public Long expireKey(String key, int time) {
+        System.out.println("降级啦："+key+","+time);
+        return null;
+    }
+
+    @Override
     public String getIpAndPort() {
         System.out.println("拿不到端口，降级啦");
         return "error";

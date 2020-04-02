@@ -18,6 +18,7 @@ import java.util.List;
 @Repository
 public interface UserDao {
 
+
     @DS("master")
     @Select("select * from my_user")
     List<User> getUsers();
