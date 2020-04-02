@@ -17,3 +17,4 @@ spring:
            uri: lb://service-consumer
            predicates:
             - Method=GET,POST
+            - Header=X-Request-Id, \d+

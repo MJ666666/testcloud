@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: dubbo-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.174.128:8848
+
+demo:
+  service:
+    version: 1.0.0
+
+
+dubbo:
+  registry:
+    address: nacos://192.168.174.128:8848
+  scan:
+    base-packages: com.lmj.test.dubboconsumer.controller
+  protocol:
+    name: dubbo
+
+server:
+  port: 8085

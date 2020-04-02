@@ -8,13 +8,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common" />
+        <module name="dubbo-consumer" />
+        <module name="dubbo-provider" />
+        <module name="dubbo-provider-api" />
         <module name="gateway" />
         <module name="nacos" />
         <module name="nacos2" />
         <module name="redis-service" />
         <module name="redis-service2" />
         <module name="test_rw" />
-        <module name="testcloud" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,6 +26,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common" options="-parameters" />
+      <module name="dubbo-consumer" options="-parameters" />
+      <module name="dubbo-provider" options="-parameters" />
       <module name="eureka_server" options="" />
       <module name="gateway" options="-parameters" />
       <module name="nacos" options="-parameters" />
