@@ -8,18 +8,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common" />
-        <module name="dubbo-consumer" />
-        <module name="dubbo-provider" />
+        <module name="dubbo-consumer2" />
         <module name="dubbo-provider-api" />
+        <module name="dubbo-provider2" />
         <module name="gateway" />
         <module name="nacos" />
         <module name="nacos2" />
+        <module name="oauth-server" />
         <module name="redis-service" />
         <module name="redis-service2" />
         <module name="test_rw" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="dubbo-consumer" target="1.8" />
+      <module name="dubbo-provider" target="1.8" />
       <module name="eureka_server" target="1.5" />
     </bytecodeTargetLevel>
   </component>
@@ -27,11 +30,14 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common" options="-parameters" />
       <module name="dubbo-consumer" options="-parameters" />
+      <module name="dubbo-consumer2" options="-parameters" />
       <module name="dubbo-provider" options="-parameters" />
+      <module name="dubbo-provider2" options="-parameters" />
       <module name="eureka_server" options="" />
       <module name="gateway" options="-parameters" />
       <module name="nacos" options="-parameters" />
       <module name="nacos2" options="-parameters" />
+      <module name="oauth-server" options="-parameters" />
       <module name="redis-service" options="-parameters" />
       <module name="redis-service2" options="-parameters" />
       <module name="test_rw" options="-parameters" />

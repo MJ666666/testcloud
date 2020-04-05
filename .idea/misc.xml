@@ -12,8 +12,9 @@
         <option value="$PROJECT_DIR$/redis-service2/pom.xml" />
         <option value="$PROJECT_DIR$/test_rw/pom.xml" />
         <option value="$PROJECT_DIR$/gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo-provider/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/oauth-server/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-provider2/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-consumer2/pom.xml" />
       </list>
     </option>
   </component>
